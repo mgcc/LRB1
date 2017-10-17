@@ -1,0 +1,44 @@
+
+
+Component-Based
+JSX
+Virtual DOM
+Lifecycle methods
+States
+Props
+Triggering Updates
+Routing
+CORS
+
+Create and clean up a react app first. Install Babel in ST3, Install React Dev Tools
+
+COMPONENT BASED
+  Looking at the FB page, you can clearly group the Components
+  This is how react pages are usually designed. Identify the components. Name them too.
+  Ideas: reusability
+  DRY: Don't repeat yourself. Result is that components can be very granular. Goes hand in hand with Single Responsibility.
+  Top Down / Bottom Up approaches
+
+JSX
+  - Syntax Extension
+  - Looks like JavaScript + HTML
+  - Compiles to JS
+  - Basic Rules
+  - Install Babel plugin in Sublime for correct syntax highlighting
+  - some stacks actually use a .jsx extension to differentiate it from normal .js (you'll need babel npm plugin for that)
+  - mixing JS and HTML with the interpolation symbol
+  - SEGUE: templating in es6
+
+VIRTUAL DOM
+
+  React's DOM is a copy of the actual DOM of the page. It's also a tree of nodes/elements with attributes and properties.
+
+  The render method inside Components creates the elements that make up this Virtual DOM.
+
+  When Components change, React (1) updates its virtual DOM, (2) compares its Virtual DOM with the previous state of the Virtual DOM, and computes the difference, then (3) updates the actual DOM of the page. It doesn't re-render the whole page.
+
+  So by using React, we're JavaScript to update/create React Components, and React then updates its virtual DOM, then takes care of updating the actual DOM.
+
+  What's the difference between that and using JavaScript to directly manipulate the DOM? There are methods for it after all. The latter is slower. Writing to the DOM is fast but the browser has to do a lot of layout computations after. Browsers try to reduce the time it takes to redraw the screen. This is mostly done by minmizing/collating the DOm changes that make redraws necessary. React abstract all of this minimizing/collating for us.
+
+  Incidentally, React doesn't work with JQuery

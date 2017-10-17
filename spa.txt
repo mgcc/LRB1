@@ -1,0 +1,20 @@
+SPA
+
+Refreshing doesn't happen every time to go to another page
+
+Upon visiting a website, most of the site's resources are already loaded.
+
+The user is clicking around your site, interacting with it. Fetching new data, sending data to the server.  In traditional websites, sending/getting data to/from a server would mean a page reload every time.
+
+The client does most of the heavy lifting from them. If it needs to communicate some data to/from the server, it will, but it won't reload the page.
+
+
+
+Pros
+ - fluid, native desktop-like experience
+ - saves on bandwidth since it doesn't have to reload entire pages
+
+Cons
+ - harder to develop
+ - the client is doing most of the work
+ - initial download of resources can be heavy for the client
